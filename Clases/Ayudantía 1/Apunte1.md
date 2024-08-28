@@ -144,6 +144,34 @@ La herencia es un mecanismo que permite crear nuevas clases (clases hijas) basad
     print(gato.hacer_sonido())   # Salida: Miau
 
     ```
+- Cuando cren un constructor en una clase derivada, puedes usar super() para llamar al constructor de la clase base. Esto garantiza que los atributos de la clase base se inicialicen correctamente.
+```py
+class Animal:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+class Perro(Animal):
+    def __init__(self, nombre, raza):
+        super().__init__(nombre)  # Llama al constructor de la clase base
+        self.raza = raza
+
+```
+
+- super() también se utiliza para llamar a otros métodos de la clase base. Esto puede ser útil cuando se desea extender la funcionalidad de un método en una clase derivada.
+```py
+class Animal:
+    def hacer_sonido(self):
+        return "Sonido genérico"
+
+class Perro(Animal):
+    def hacer_sonido(self):
+        sonido_base = super().hacer_sonido()  # Llama al método de la clase base
+        return sonido_base + ", pero el perro ladra 'Guau'"
+
+perro = Perro()
+print(perro.hacer_sonido())  # Salida: "Sonido genérico, pero el perro ladra 'Guau'"
+
+```
 ---
 #### Polimorfismo
 El polimorfismo permite que una sola interfaz sea utilizada para representar diferentes tipos de objetos. En otras palabras, diferentes clases pueden ser tratadas como instancias de una clase base común, permitiendo que el mismo método pueda tener diferentes comportamientos dependiendo del objeto con el que se invoque.
