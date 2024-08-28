@@ -248,3 +248,34 @@ print(rectangulo.area())  # Salida: 24
 ```
 ---
 
+## Ejercicio Propuesto
+
+#### Sistema de Gestión de Vehículos
+
+Están desarrollando un sistema para gestionar una flota de vehículos en una empresa de alquiler. Tu tarea es crear un conjunto de clases que representen diferentes tipos de vehículos, utilizando los conceptos de POO.
+
+##### Requisitos del Ejercicio
+- Definir una clase base llamada Vehiculo que contenga:
+
+- Atributos privados para el número de matrícula (matricula) y el número de ruedas (num_ruedas).
+- Un método constructor __init__ que inicialice estos atributos.
+- Métodos para obtener (get) y establecer (set) los valores de los atributos.
+- Un método mostrar_informacion que muestre por pantalla la información básica del vehículo.
+- Crear clases derivadas para tipos específicos de vehículos:
+##### Clases
+- Auto: debe heredar de Vehiculo y tener un atributo adicional para el número de puertas.
+- Moto: debe heredar de Vehiculo y tener un atributo adicional para el tipo de manillar (por ejemplo, "deportivo", "turismo").
+- Camion: debe heredar de Vehiculo y tener un atributo adicional para la capacidad de carga en toneladas.
+- AutoElectrico: debe heredar de Coche y tener un atributo adicional para el nivel de batería.
+
+##### Consideraciones
+- Utilizen el polimorfismo para implementar un método mostrar_informacion en cada clase derivada que muestre información adicional específica para cada tipo de vehículo.
+
+- Apliquen encapsulamiento para asegurar que los atributos del vehículo sean accesibles solo a través de métodos y no directamente.
+
+##### Instrucciones
+- Definan la clase Vehiculo siguiendo las especificaciones.
+Crea las clases derivadas Auto, Moto, Camion y AutoElectrico utilizando herencia.
+- Implementen el polimorfismo al sobrescribir el método mostrar_informacion en las clases derivadas.
+- Apliquen el encapsulamiento utilizando atributos privados y métodos de acceso.
+- Creen instancias de cada clase y prueba todos los métodos para asegurarte de que funcionan como se espera.
