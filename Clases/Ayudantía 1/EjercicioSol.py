@@ -27,7 +27,7 @@ class Auto(Vehiculo):
 
     def mostrar_informacion(self):
         super().mostrar_informacion()
-        print(f"Es un coche con {self.num_puertas} puertas")
+        print(f"Es un auto con {self.num_puertas} puertas")
 
 class Moto(Vehiculo):
     def __init__(self, matricula, num_ruedas, tipo_manillar):
