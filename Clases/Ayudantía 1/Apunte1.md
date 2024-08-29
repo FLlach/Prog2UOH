@@ -1,4 +1,64 @@
 # Ayudantía 1
+
+## GIT y Github
+- Configuración inicial:
+```bash
+# Configurar nombre de usuario
+git config --global user.name "Tu Nombre"
+
+# Configurar correo electrónico
+git config --global user.email "tuemail@ejemplo.com"
+
+```
+- Nuevo repo
+```bash
+# Inicializar un nuevo repositorio Git en el directorio actual
+git init
+
+```
+- Clonar repositorio
+```bash
+# Clonar un repositorio remoto a tu máquina local
+git clone https://github.com/usuario/repositorio.git
+```
+- Añadir cambios al índice
+```bash
+# Añadir un archivo específico al índice
+git add nombre_archivo
+
+# Añadir todos los archivos al índice
+git add .
+```
+- Confirmar cambios
+```bash
+# Crear un commit con un mensaje descriptivo
+git commit -m "Descripción de los cambios realizados"
+```
+- Ramas
+```bash
+# Crear ramas
+git branch nombre_rama
+# Cambiar a una rama existente
+git checkout nombre_rama
+
+# Cambiar a la rama a la que quieres fusionar cambios
+git checkout main
+
+# Fusionar los cambios de otra rama
+git merge nombre_rama
+
+```
+- Subir cambios (PUSH)
+```bash
+# Enviar cambios a la rama principal del repositorio remoto
+git push origin main
+```
+- Obtener cambios de un repositorio remoto
+```bash
+# Obtener y fusionar cambios del repositorio remoto
+git pull origin main
+```
+---
 ## Paradigmas de programación
 Los paradigmas de programación son enfoques o estilos metodológicos que guían la forma en que se estructura y organiza el código para resolver problemas específicos en el desarrollo de software. Cada paradigma ofrece un marco conceptual diferente para abordar tareas de programación, facilitando la resolución de ciertos tipos de problemas al proporcionar herramientas y técnicas adaptadas a esas necesidades.
 
