@@ -209,4 +209,4 @@ def torres_hanoi(n, origen, auxiliar, destino):
 
 ```
 
-![Alt text](hanoi_algorithm.webp)
+![Alt text](Hanoi_algorithm.webp)
